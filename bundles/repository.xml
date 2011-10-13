@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20111013230142.273' name='Untitled'>
+<repository lastmodified='20111013230315.561' name='Untitled'>
   <resource id='biz.aQute.bnd/1.47.0' presentationname='bnd' symbolicname='biz.aQute.bnd' uri='biz.aQute.bnd/biz.aQute.bnd-1.47.0.jar' version='1.47.0'>
     <description>
       A utility and plugin to wrap, build, print, or otherwise manipulate
@@ -554,6 +554,44 @@
       Execution Environment (|(ee=J2SE-1.5))
     </require>
   </resource>
+  <resource id='com.springsource.org.objectweb.asm/3.1.0' presentationname='ObjectWeb ASM' symbolicname='com.springsource.org.objectweb.asm' uri='com.springsource.org.objectweb.asm/com.springsource.org.objectweb.asm-3.1.0.jar' version='3.1.0'>
+    <size>
+      44173
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='ObjectWeb ASM'/>
+      <p n='symbolicname' v='com.springsource.org.objectweb.asm'/>
+      <p n='version' t='version' v='3.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm'/>
+      <p n='version' t='version' v='3.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm.signature'/>
+      <p n='version' t='version' v='3.1.0'/>
+    </capability>
+  </resource>
+  <resource id='com.springsource.org.objectweb.asm.tree/3.1.0' presentationname='ObjectWeb ASM Tree' symbolicname='com.springsource.org.objectweb.asm.tree' uri='com.springsource.org.objectweb.asm.tree/com.springsource.org.objectweb.asm.tree-3.1.0.jar' version='3.1.0'>
+    <size>
+      23108
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='ObjectWeb ASM Tree'/>
+      <p n='symbolicname' v='com.springsource.org.objectweb.asm.tree'/>
+      <p n='version' t='version' v='3.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm.tree'/>
+      <p n='uses' v='org.objectweb.asm'/>
+      <p n='version' t='version' v='3.1.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.objectweb.asm)(version&gt;=3.1.0)(version&lt;=3.1.0))' multiple='false' name='package' optional='false'>
+      Import package org.objectweb.asm ;version=[3.1.0,3.1.0]
+    </require>
+  </resource>
   <resource id='javax.servlet/2.5.0.v200910301333' presentationname='Servlet API Bundle' symbolicname='javax.servlet' uri='javax.servlet/javax.servlet-2.5.0.jar' version='2.5.0.v200910301333'>
     <size>
       118865
@@ -578,6 +616,215 @@
     </capability>
     <require extend='false' filter='(|(ee=CDC-1.1/Foundation-1.1)(ee=J2SE-1.4))' multiple='false' name='ee' optional='false'>
       Execution Environment (|(ee=CDC-1.1/Foundation-1.1)(ee=J2SE-1.4))
+    </require>
+  </resource>
+  <resource id='javax.xml/1.3.4.v201005080400' presentationname='JAXP XML' symbolicname='javax.xml' uri='javax.xml/javax.xml-1.3.4.jar' version='1.3.4.v201005080400'>
+    <size>
+      237988
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='JAXP XML'/>
+      <p n='symbolicname' v='javax.xml'/>
+      <p n='version' t='version' v='1.3.4.v201005080400'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.datatype'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.namespace'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.parsers'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.transform'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.transform.dom'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.transform.sax'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.transform.stream'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.validation'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.xpath'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.xmlcommons'/>
+      <p n='version' t='version' v='1.3.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.bootstrap'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.css'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.events'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.html'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.ls'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.ranges'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.stylesheets'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.traversal'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.views'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.w3c.dom.xpath'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.xml.sax'/>
+      <p n='version' t='version' v='2.0.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.xml.sax.ext'/>
+      <p n='version' t='version' v='2.0.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.xml.sax.helpers'/>
+      <p n='version' t='version' v='2.0.2'/>
+    </capability>
+    <require extend='false' filter='(&amp;(symbolicname=system.bundle)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle system.bundle; 0.0.0
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.2))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.2))
+    </require>
+  </resource>
+  <resource id='javax.xml.stream/1.0.1.v201004272200' presentationname='Bundle-Name' symbolicname='javax.xml.stream' uri='javax.xml.stream/javax.xml.stream-1.0.1.jar' version='1.0.1.v201004272200'>
+    <size>
+      39698
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Bundle-Name'/>
+      <p n='symbolicname' v='javax.xml.stream'/>
+      <p n='version' t='version' v='1.0.1.v201004272200'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.namespace'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.stream'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.stream.events'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.xml.stream.util'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <require extend='false' filter='(&amp;(symbolicname=javax.xml)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle javax.xml; 0.0.0
+    </require>
+    <require extend='false' filter='(&amp;(symbolicname=system.bundle)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Require Bundle system.bundle; 0.0.0
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.4))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.4))
+    </require>
+  </resource>
+  <resource id='org.apache.felix.bundlerepository/1.6.2' presentationname='Apache Felix Bundle Repository' symbolicname='org.apache.felix.bundlerepository' uri='org.apache.felix.bundlerepository/org.apache.felix.bundlerepository-1.6.2.jar' version='1.6.2'>
+    <description>
+      Bundle repository service.
+    </description>
+    <size>
+      230135
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-osgi-bundle-repository.html
+    </documentation>
+    <source>
+      http://felix.apache.org/site/downloads.cgi
+    </source>
+    <capability name='service'>
+      <p n='service' v='org.apache.felix.bundlerepository.RepositoryAdmin'/>
+    </capability>
+    <capability name='service'>
+      <p n='service' v='org.osgi.service.obr.RepositoryAdmin'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Bundle Repository'/>
+      <p n='symbolicname' v='org.apache.felix.bundlerepository'/>
+      <p n='version' t='version' v='1.6.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.bundlerepository'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.xml.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.bundlerepository)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.bundlerepository ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.obr)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.obr ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.url)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.url ;version=[1.0.0,2.0.0)
     </require>
   </resource>
   <resource id='org.apache.felix.configadmin/1.2.8' presentationname='Apache Felix Configuration Admin Service' symbolicname='org.apache.felix.configadmin' uri='org.apache.felix.configadmin/org.apache.felix.configadmin-1.2.8.jar' version='1.2.8'>
@@ -1619,6 +1866,261 @@
     </require>
     <require extend='false' filter='(&amp;(package=org.osgi.util.xml)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
       Import package org.osgi.util.xml ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id='patricia-trie/0.2.0' presentationname='patricia-trie' symbolicname='patricia-trie' uri='patricia-trie/patricia-trie-0.2.0.jar' version='0.2.0'>
+    <size>
+      52792
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='patricia-trie'/>
+      <p n='symbolicname' v='patricia-trie'/>
+      <p n='version' t='version' v='0.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ardverk.collection'/>
+      <p n='version' t='version' v='0.2.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.ardverk.collection)(version&gt;=0.2.0)(!(version&gt;=1.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.ardverk.collection ;version=[0.2.0,1.0.0)
+    </require>
+  </resource>
+  <resource id='stax2-api/3.1.1' presentationname='Stax2 API' symbolicname='stax2-api' uri='stax2-api/stax2-api-3.1.1.jar' version='3.1.1'>
+    <size>
+      182112
+    </size>
+    <license>
+      http://www.opensource.org/licenses/bsd-license.php
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Stax2 API'/>
+      <p n='symbolicname' v='stax2-api'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2'/>
+      <p n='uses' v='javax.xml.stream,org.codehaus.stax2.typed,org.codehaus.stax2.validation,javax.xml.namespace'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.ri.evt'/>
+      <p n='uses' v='org.codehaus.stax2,javax.xml.stream,javax.xml.stream.util,org.codehaus.stax2.evt,org.codehaus.stax2.ri,javax.xml.stream.events,javax.xml.namespace'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.ri.dom'/>
+      <p n='uses' v='org.codehaus.stax2,javax.xml.transform.dom,org.codehaus.stax2.ri,org.w3c.dom,org.codehaus.stax2.typed,org.codehaus.stax2.ri.typed,org.codehaus.stax2.validation,javax.xml.namespace,javax.xml.stream'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.util'/>
+      <p n='uses' v='org.codehaus.stax2,javax.xml.stream,javax.xml.stream.util,org.codehaus.stax2.typed,org.codehaus.stax2.validation,javax.xml.namespace'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.evt'/>
+      <p n='uses' v='org.codehaus.stax2,javax.xml.stream,javax.xml.stream.events'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.ri'/>
+      <p n='uses' v='org.codehaus.stax2,org.codehaus.stax2.util,org.codehaus.stax2.evt,javax.xml.stream.events,org.codehaus.stax2.typed,org.codehaus.stax2.ri.typed,org.codehaus.stax2.validation,javax.xml.namespace,javax.xml.stream,org.codehaus.stax2.ri.evt,javax.xml.stream.util'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.io'/>
+      <p n='uses' v='javax.xml.transform'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.validation'/>
+      <p n='uses' v='javax.xml.stream,javax.xml.namespace'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.typed'/>
+      <p n='uses' v='javax.xml.stream,javax.xml.namespace'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.ri.typed'/>
+      <p n='uses' v='org.codehaus.stax2.ri,org.codehaus.stax2.typed,javax.xml.namespace'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.codehaus.stax2.osgi'/>
+      <p n='uses' v='org.codehaus.stax2,org.codehaus.stax2.validation'/>
+      <p n='version' t='version' v='3.1.1'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.namespace
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream.events)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream.events
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream.util
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2 ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.evt)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.evt ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.io)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.io ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.osgi)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.osgi ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.ri)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.ri ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.ri.dom)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.ri.dom ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.ri.evt)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.ri.evt ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.ri.typed)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.ri.typed ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.typed)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.typed ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.util)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.util ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.validation)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.validation ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.4))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.4))
+    </require>
+  </resource>
+  <resource id='woodstox-core-asl/4.1.1' presentationname='Woodstox XML-processor' symbolicname='woodstox-core-asl' uri='woodstox-core-asl/woodstox-core-asl-4.1.1.jar' version='4.1.1'>
+    <size>
+      478446
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Woodstox XML-processor'/>
+      <p n='symbolicname' v='woodstox-core-asl'/>
+      <p n='version' t='version' v='4.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.ctc.wstx.msv'/>
+      <p n='uses' v='org.xml.sax,javax.xml.namespace,javax.xml.stream,javax.xml.parsers,org.codehaus.stax2.validation,com.ctc.wstx.api'/>
+      <p n='version' t='version' v='4.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.ctc.wstx.osgi'/>
+      <p n='uses' v='org.codehaus.stax2,com.ctc.wstx.msv,org.osgi.framework,com.ctc.wstx.api,org.codehaus.stax2.validation,org.codehaus.stax2.osgi,com.ctc.wstx.stax'/>
+      <p n='version' t='version' v='4.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.ctc.wstx.api'/>
+      <p n='uses' v='org.codehaus.stax2,org.codehaus.stax2.io,org.codehaus.stax2.validation,javax.xml.stream'/>
+      <p n='version' t='version' v='4.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.ctc.wstx.stax'/>
+      <p n='uses' v='javax.xml.transform.dom,org.codehaus.stax2.io,javax.xml.namespace,org.xml.sax,javax.xml.stream,org.codehaus.stax2.ri.evt,javax.xml.transform.sax,org.codehaus.stax2,org.codehaus.stax2.ri,javax.xml.stream.events,javax.xml.stream.util,javax.xml.transform,javax.xml.transform.stream,com.ctc.wstx.api'/>
+      <p n='version' t='version' v='4.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.ctc.wstx.sax'/>
+      <p n='uses' v='org.codehaus.stax2,javax.xml.parsers,org.xml.sax,com.ctc.wstx.stax,javax.xml.stream,org.xml.sax.ext,com.ctc.wstx.api,org.xml.sax.helpers'/>
+      <p n='version' t='version' v='4.1.1'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.namespace
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream.events)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream.events
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream.util
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2 ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.io)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.io ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.osgi)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.osgi ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.ri)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.ri ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.ri.dom)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.ri.dom ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.ri.evt)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.ri.evt ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.ri.typed)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.ri.typed ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.typed)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.typed ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.codehaus.stax2.validation)(version&gt;=3.1.1))' multiple='false' name='package' optional='false'>
+      Import package org.codehaus.stax2.validation ;version=3.1.1
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.ext)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.ext
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.4))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.4))
     </require>
   </resource>
 </repository>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
+<?xml-stylesheet type='text/xsl' href='http://www2.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20111013230315.561' name='Untitled'>
+<repository lastmodified='20111013104541.517' name='Untitled'>
   <resource id='biz.aQute.bnd/1.47.0' presentationname='bnd' symbolicname='biz.aQute.bnd' uri='biz.aQute.bnd/biz.aQute.bnd-1.47.0.jar' version='1.47.0'>
     <description>
       A utility and plugin to wrap, build, print, or otherwise manipulate
@@ -182,12 +182,12 @@
       <p n='version' t='version' v='1.43.1'/>
     </capability>
   </resource>
-  <resource id='biz.aQute.bndlib/1.45.0' presentationname='bnd - Bundle Tool' symbolicname='biz.aQute.bndlib' uri='biz.aQute.bndlib/biz.aQute.bndlib-1.45.0.jar' version='1.45.0'>
+  <resource id='biz.aQute.bndlib/1.47.0' presentationname='bnd - Bundle Tool' symbolicname='biz.aQute.bndlib' uri='biz.aQute.bndlib/biz.aQute.bndlib-1.47.jar' version='1.47.0'>
     <description>
       A Swiss Army Knife for OSGi
     </description>
     <size>
-      849152
+      877121
     </size>
     <license>
       http://www.opensource.org/licenses/apache2.0.php; description="Apache
@@ -203,7 +203,7 @@
       <p n='manifestversion' v='2'/>
       <p n='presentationname' v='bnd - Bundle Tool'/>
       <p n='symbolicname' v='biz.aQute.bndlib'/>
-      <p n='version' t='version' v='1.45.0'/>
+      <p n='version' t='version' v='1.47.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.bnd.annotation'/>
@@ -229,7 +229,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.bnd.service'/>
-      <p n='uses' v='aQute.lib.osgi,aQute.libg.reporter,aQute.bnd.build,aQute.libg.version'/>
+      <p n='uses' v='aQute.lib.osgi,aQute.bnd.build,aQute.libg.reporter,aQute.libg.version'/>
       <p n='version' t='version' v='1.44.0'/>
     </capability>
     <capability name='package'>
@@ -288,14 +288,8 @@
     <require extend='false' filter='(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package javax.xml.xpath
     </require>
-    <require extend='false' filter='(&amp;(package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='false'>
-      Import package junit.framework ;version=[3.8.0,4.0.0)
-    </require>
     <require extend='false' filter='(&amp;(package=org.osgi.service.bindex)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.osgi.service.bindex ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.service.component.annotations)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.service.component.annotations ;version=[1.0.0,2.0.0)
     </require>
     <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.w3c.dom
@@ -432,12 +426,12 @@
       Execution Environment (|(ee=J2SE-1.5))
     </require>
   </resource>
-  <resource id='biz.aQute.bndlib/1.47.0' presentationname='bnd - Bundle Tool' symbolicname='biz.aQute.bndlib' uri='biz.aQute.bndlib/biz.aQute.bndlib-1.47.jar' version='1.47.0'>
+  <resource id='biz.aQute.bndlib/1.45.0' presentationname='bnd - Bundle Tool' symbolicname='biz.aQute.bndlib' uri='biz.aQute.bndlib/biz.aQute.bndlib-1.45.0.jar' version='1.45.0'>
     <description>
       A Swiss Army Knife for OSGi
     </description>
     <size>
-      877121
+      849152
     </size>
     <license>
       http://www.opensource.org/licenses/apache2.0.php; description="Apache
@@ -453,7 +447,7 @@
       <p n='manifestversion' v='2'/>
       <p n='presentationname' v='bnd - Bundle Tool'/>
       <p n='symbolicname' v='biz.aQute.bndlib'/>
-      <p n='version' t='version' v='1.47.0'/>
+      <p n='version' t='version' v='1.45.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.bnd.annotation'/>
@@ -479,7 +473,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.bnd.service'/>
-      <p n='uses' v='aQute.lib.osgi,aQute.bnd.build,aQute.libg.reporter,aQute.libg.version'/>
+      <p n='uses' v='aQute.lib.osgi,aQute.libg.reporter,aQute.bnd.build,aQute.libg.version'/>
       <p n='version' t='version' v='1.44.0'/>
     </capability>
     <capability name='package'>
@@ -538,8 +532,14 @@
     <require extend='false' filter='(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package javax.xml.xpath
     </require>
+    <require extend='false' filter='(&amp;(package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='false'>
+      Import package junit.framework ;version=[3.8.0,4.0.0)
+    </require>
     <require extend='false' filter='(&amp;(package=org.osgi.service.bindex)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.osgi.service.bindex ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.component.annotations)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.component.annotations ;version=[1.0.0,2.0.0)
     </require>
     <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.w3c.dom
@@ -552,6 +552,29 @@
     </require>
     <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
       Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id='bndtools.runtime.eclipse.applaunch/0.1.0' presentationname='bndtools.runtime.eclipse.applaunch' symbolicname='bndtools.runtime.eclipse.applaunch' uri='bndtools.runtime.eclipse.applaunch/bndtools.runtime.eclipse.applaunch-0.1.0.jar' version='0.1.0'>
+    <size>
+      14079
+    </size>
+    <license>
+      http://www.opensource.org/licenses/eclipse-1.0.php
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='bndtools.runtime.eclipse.applaunch'/>
+      <p n='symbolicname' v='bndtools.runtime.eclipse.applaunch'/>
+      <p n='version' t='version' v='0.1.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.eclipse.osgi.service.runnable)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.eclipse.osgi.service.runnable ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.util.tracker ;version=[1.4.0,2.0.0)
     </require>
   </resource>
   <resource id='com.springsource.org.objectweb.asm/3.1.0' presentationname='ObjectWeb ASM' symbolicname='com.springsource.org.objectweb.asm' uri='com.springsource.org.objectweb.asm/com.springsource.org.objectweb.asm-3.1.0.jar' version='3.1.0'>

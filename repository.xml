@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20111013211750.086' name='Untitled'>
+<repository lastmodified='20111013212350.595' name='Untitled'>
   <resource id='biz.aQute.bnd/1.46.0' presentationname='bnd' symbolicname='biz.aQute.bnd' uri='biz.aQute.bnd/biz.aQute.bnd-1.46.0.jar' version='1.46.0'>
     <description>
       A utility and plugin to wrap, build, print, or otherwise manipulate
@@ -223,7 +223,7 @@
       http://www.aQute.biz/Code/Bnd
     </documentation>
     <copyright>
-      Copyright � aQute SARL (2000, 2011). All Rights Reserved.
+      Copyright Â© aQute SARL (2000, 2011). All Rights Reserved.
     </copyright>
     <capability name='bundle'>
       <p n='manifestversion' v='2'/>
@@ -1403,4 +1403,4 @@
       Import package org.osgi.util.xml ;version=[1.0.0,2.0.0)
     </require>
   </resource>
-</repository>y>
+</repository>

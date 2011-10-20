@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 <repository lastmodified="20111014174538.681" name="Untitled">
-  <resource id="biz.aQute.bnd/1.47.0" presentationname="bnd" symbolicname="biz.aQute.bnd" uri="file:/Users/njbartlett/.obr/bundles/biz.aQute.bnd/biz.aQute.bnd-1.47.0.jar" version="1.47.0">
+  <resource id="biz.aQute.bnd/1.47.0" presentationname="bnd" symbolicname="biz.aQute.bnd" uri="biz.aQute.bnd/biz.aQute.bnd-1.47.0.jar" version="1.47.0">
     <description>
       A utility and plugin to wrap, build, print, or otherwise manipulate
        bundles
@@ -144,7 +144,7 @@
     </require>
   </resource>
 
-  <resource id="biz.aQute.bnd.annotation/1.47.0" presentationname="bnd Annotations Library" symbolicname="biz.aQute.bnd.annotation" uri="file:/Users/njbartlett/.obr/bundles/biz.aQute.bnd.annotation/biz.aQute.bnd.annotation-1.47.0.jar" version="1.47.0">
+  <resource id="biz.aQute.bnd.annotation/1.47.0" presentationname="bnd Annotations Library" symbolicname="biz.aQute.bnd.annotation" uri="biz.aQute.bnd.annotation/biz.aQute.bnd.annotation-1.47.0.jar" version="1.47.0">
     <description>
       Contains only the annotations for bnd.
     </description>
@@ -208,7 +208,7 @@
     </require>
   </resource>
 
-  <resource id="biz.aQute.launcher/1.0.0" presentationname="biz.aQute.launcher" symbolicname="biz.aQute.launcher" uri="file:/Users/njbartlett/.obr/bundles/biz.aQute.launcher/biz.aQute.launcher-1.0.0.jar" version="1.0.0">
+  <resource id="biz.aQute.launcher/1.0.0" presentationname="biz.aQute.launcher" symbolicname="biz.aQute.launcher" uri="biz.aQute.launcher/biz.aQute.launcher-1.0.0.jar" version="1.0.0">
     <size>
       56421
     </size>
@@ -258,7 +258,7 @@
     </require>
   </resource>
 
-  <resource id="biz.aQute.bndlib/1.47.1" presentationname="bnd - Bundle Tool" symbolicname="biz.aQute.bndlib" uri="file:/Users/njbartlett/.obr/bundles/biz.aQute.bndlib/biz.aQute.bndlib-1.47.1.jar" version="1.47.1">
+  <resource id="biz.aQute.bndlib/1.47.1" presentationname="bnd - Bundle Tool" symbolicname="biz.aQute.bndlib" uri="biz.aQute.bndlib/biz.aQute.bndlib-1.47.1.jar" version="1.47.1">
     <description>
       A Swiss Army Knife for OSGi
     </description>
@@ -384,7 +384,7 @@
     </require>
   </resource>
 
-  <resource id="biz.aQute.junit/1.0.0" presentationname="biz.aQute.junit" symbolicname="biz.aQute.junit" uri="file:/Users/njbartlett/.obr/bundles/biz.aQute.junit/biz.aQute.junit-1.0.0.jar" version="1.0.0">
+  <resource id="biz.aQute.junit/1.0.0" presentationname="biz.aQute.junit" symbolicname="biz.aQute.junit" uri="biz.aQute.junit/biz.aQute.junit-1.0.0.jar" version="1.0.0">
     <size>
       66980
     </size>

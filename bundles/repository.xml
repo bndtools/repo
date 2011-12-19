@@ -1,5 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20111110060950.007' name='Untitled'>
+<repository lastmodified='20111214083052.125' name='Untitled'>
   <resource id='biz.aQute.bnd/1.47.0' presentationname='bnd' symbolicname='biz.aQute.bnd' uri='biz.aQute.bnd/biz.aQute.bnd-1.47.0.jar' version='1.47.0'>
     <description>
       A utility and plugin to wrap, build, print, or otherwise manipulate
@@ -3222,6 +3224,39 @@
       Import package org.osgi.util.tracker ;version=[1.4.0,2.0.0)
     </require>
   </resource>
+  <resource id='com.jcraft.jsch/0.1.41.v201101211617' presentationname='JSch' symbolicname='com.jcraft.jsch' uri='com.jcraft.jsch/com.jcraft.jsch-0.1.41.jar' version='0.1.41.v201101211617'>
+    <size>
+      226770
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='JSch'/>
+      <p n='symbolicname' v='com.jcraft.jsch'/>
+      <p n='version' t='version' v='0.1.41.v201101211617'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.jcraft.jsch'/>
+      <p n='version' t='version' v='0.1.41'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.jcraft.jsch.jce'/>
+      <p n='version' t='version' v='0.1.41'/>
+      <p n='x-internal' v='true'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.jcraft.jsch.jcraft'/>
+      <p n='version' t='version' v='0.1.41'/>
+      <p n='x-internal' v='true'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.jcraft.jsch.jgss'/>
+      <p n='version' t='version' v='0.1.41'/>
+      <p n='x-internal' v='true'/>
+    </capability>
+    <require extend='false' filter='(|(ee=J2SE-1.4))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.4))
+    </require>
+  </resource>
   <resource id='com.springsource.org.objectweb.asm/3.1.0' presentationname='ObjectWeb ASM' symbolicname='com.springsource.org.objectweb.asm' uri='com.springsource.org.objectweb.asm/com.springsource.org.objectweb.asm-3.1.0.jar' version='3.1.0'>
     <size>
       44173
@@ -3469,6 +3504,58 @@
     </require>
     <require extend='false' filter='(|(ee=J2SE-1.4))' multiple='false' name='ee' optional='false'>
       Execution Environment (|(ee=J2SE-1.4))
+    </require>
+  </resource>
+  <resource id='org.apache.felix.bundlerepository/1.6.7.SNAPSHOT' presentationname='Apache Felix Bundle Repository' symbolicname='org.apache.felix.bundlerepository' uri='org.apache.felix.bundlerepository/org.apache.felix.bundlerepository-1.6.7.jar' version='1.6.7.SNAPSHOT'>
+    <description>
+      Bundle repository service.
+    </description>
+    <size>
+      173372
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-osgi-bundle-repository.html
+    </documentation>
+    <source>
+      http://felix.apache.org/site/downloads.cgi
+    </source>
+    <capability name='service'>
+      <p n='service' v='org.apache.felix.bundlerepository.RepositoryAdmin'/>
+    </capability>
+    <capability name='service'>
+      <p n='service' v='org.osgi.service.obr.RepositoryAdmin'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Bundle Repository'/>
+      <p n='symbolicname' v='org.apache.felix.bundlerepository'/>
+      <p n='version' t='version' v='1.6.7.SNAPSHOT'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.bundlerepository'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.xml.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.bundlerepository)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.bundlerepository ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.4.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.obr)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.obr ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.url)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.url ;version=[1.0.0,2.0.0)
     </require>
   </resource>
   <resource id='org.apache.felix.bundlerepository/1.6.2' presentationname='Apache Felix Bundle Repository' symbolicname='org.apache.felix.bundlerepository' uri='org.apache.felix.bundlerepository/org.apache.felix.bundlerepository-1.6.2.jar' version='1.6.2'>
@@ -3924,6 +4011,127 @@
     </require>
     <require extend='false' filter='(&amp;(package=org.osgi.service.wireadmin)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
       Import package org.osgi.service.wireadmin
+    </require>
+  </resource>
+  <resource id='org.eclipse.jgit/1.1.0.201109151100-r' presentationname='JGit Core' symbolicname='org.eclipse.jgit' uri='org.eclipse.jgit/org.eclipse.jgit-1.1.0.jar' version='1.1.0.201109151100-r'>
+    <size>
+      1394520
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='JGit Core'/>
+      <p n='symbolicname' v='org.eclipse.jgit'/>
+      <p n='version' t='version' v='1.1.0.201109151100-r'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.api'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.api.errors'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.blame'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.diff'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.dircache'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.errors'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.events'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.fnmatch'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.ignore'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.lib'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.merge'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.nls'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.notes'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.patch'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.revplot'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.revwalk'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.revwalk.filter'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.storage.file'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.storage.pack'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.transport'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.transport.resolver'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.treewalk'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.treewalk.filter'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.util'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jgit.util.io'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(symbolicname=com.jcraft.jsch)(version&gt;=0.1.37)(!(version&gt;=0.2.0)))' multiple='false' name='bundle' optional='false'>
+      Require Bundle com.jcraft.jsch; [0.1.37,0.2.0)
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.5))
     </require>
   </resource>
   <resource id='org.osgi.impl.bundle.bindex/2.2.0' presentationname='org.osgi.impl.bundle.bindex' symbolicname='org.osgi.impl.bundle.bindex' uri='org.osgi.impl.bundle.bindex/org.osgi.impl.bundle.bindex-2.2.0.jar' version='2.2.0'>

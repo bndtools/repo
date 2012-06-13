@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www2.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20111209022006.102' name='Untitled'>
+<repository lastmodified='20120613050550.099' name='Untitled'>
   <resource id='Minimum-EE/1.0.0' presentationname='Minimum-EE' symbolicname='Minimum-EE' uri='ee.minimum/ee.minimum-1.0.0.jar' version='1.0.0'>
     <description>
       Contains the OSGi minimum execution environment stubbed classes
@@ -2703,6 +2703,108 @@
     </capability>
     <require extend='false' filter='(|(ee=OSGi/Minimum-1.1))' multiple='false' name='ee' optional='false'>
       Execution Environment (|(ee=OSGi/Minimum-1.1))
+    </require>
+  </resource>
+  <resource id='osgi.core/5.0.0.201203141902' presentationname='osgi.core' symbolicname='osgi.core' uri='osgi.core/osgi.core-5.0.0.jar' version='5.0.0.201203141902'>
+    <description>
+      OSGi Service Platform Release 5 Version 5.0, Core Interfaces
+       and Classes for use in compiling bundles.
+    </description>
+    <size>
+      418232
+    </size>
+    <license>
+      http://opensource.org/licenses/apache2.0.php; link="http://www.apache.org/licenses/LICENSE-2.0";
+       description="Apache License, Version 2.0"
+    </license>
+    <copyright>
+      Copyright (c) OSGi Alliance (2000, 2012). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='osgi.core'/>
+      <p n='symbolicname' v='osgi.core'/>
+      <p n='version' t='version' v='5.0.0.201203141902'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.startlevel'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.wiring'/>
+      <p n='uses' v='org.osgi.resource,org.osgi.framework'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.hooks.bundle'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.hooks.service'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.hooks.resolver'/>
+      <p n='uses' v='org.osgi.framework.wiring'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.namespace'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.launch'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework'/>
+      <p n='uses' v='javax.security.auth.x500'/>
+      <p n='version' t='version' v='1.7.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.hooks.weaving'/>
+      <p n='uses' v='org.osgi.framework.wiring'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.condpermadmin'/>
+      <p n='uses' v='org.osgi.framework,org.osgi.service.permissionadmin'/>
+      <p n='version' t='version' v='1.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.packageadmin'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.permissionadmin'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.startlevel'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.url'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.util.tracker'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.5.1'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.security.auth.x500)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.security.auth.x500
     </require>
   </resource>
   <resource id='osgi.core/4.0.1' presentationname='osgi.core' symbolicname='osgi.core' uri='osgi.core/osgi.core-4.0.1.jar' version='4.0.1'>

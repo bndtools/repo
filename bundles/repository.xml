@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www2.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20120612040150.068' name='Untitled'>
+<repository lastmodified='20120613050540.566' name='Untitled'>
   <resource id='aQute.libg/2.7.3' presentationname='aQute.libg' symbolicname='aQute.libg' uri='aQute.libg/aQute.libg-2.7.3.jar' version='2.7.3'>
     <description>
       A library to be statically linked. Contains many small utilities.
@@ -5231,6 +5231,212 @@
     </require>
     <require extend='false' filter='(&amp;(package=org.osgi.util.xml)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
       Import package org.osgi.util.xml ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id='osgi.enterprise/5.0.0.201203141834' presentationname='osgi.enterprise' symbolicname='osgi.enterprise' uri='osgi.enterprise/osgi.enterprise-5.0.0.jar' version='5.0.0.201203141834'>
+    <description>
+      OSGi Service Platform Release 5 Version 5.0, Enterprise Interfaces
+       and Classes for use in compiling bundles.
+    </description>
+    <size>
+      479506
+    </size>
+    <license>
+      http://opensource.org/licenses/apache2.0.php; link="http://www.apache.org/licenses/LICENSE-2.0";
+       description="Apache License, Version 2.0"
+    </license>
+    <copyright>
+      Copyright (c) OSGi Alliance (2000, 2012). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='osgi.enterprise'/>
+      <p n='symbolicname' v='osgi.enterprise'/>
+      <p n='version' t='version' v='5.0.0.201203141834'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.jmx.service.cm'/>
+      <p n='uses' v='javax.management.openmbean'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.jmx.framework'/>
+      <p n='uses' v='org.osgi.jmx,javax.management.openmbean'/>
+      <p n='version' t='version' v='1.7.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.jmx.service.permissionadmin'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.jmx.service.provisioning'/>
+      <p n='uses' v='javax.management.openmbean'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.jmx.framework.wiring'/>
+      <p n='uses' v='org.osgi.jmx,javax.management.openmbean,javax.management'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.jmx.service.useradmin'/>
+      <p n='uses' v='org.osgi.jmx,javax.management.openmbean'/>
+      <p n='version' t='version' v='1.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.jmx'/>
+      <p n='uses' v='javax.management.openmbean'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.namespace.extender'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.namespace.contract'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.namespace.service'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.blueprint.reflect'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.blueprint.container'/>
+      <p n='uses' v='org.osgi.service.blueprint.reflect,org.osgi.framework'/>
+      <p n='version' t='version' v='1.0.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.cm'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.5.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.component'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.2.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.component.annotations'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.coordinator'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.event'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.http'/>
+      <p n='uses' v='javax.servlet.http,javax.servlet'/>
+      <p n='version' t='version' v='1.2.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.jdbc'/>
+      <p n='uses' v='javax.sql'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.jndi'/>
+      <p n='uses' v='javax.naming.directory,javax.naming'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.jpa'/>
+      <p n='uses' v='javax.persistence'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.log'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.metatype'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.provisioning'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.remoteserviceadmin'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.repository'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.resolver'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.serviceloader'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.subsystem'/>
+      <p n='uses' v='org.osgi.resource,org.osgi.framework'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.useradmin'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.util.xml'/>
+      <p n='uses' v='org.osgi.framework,javax.xml.parsers'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.management)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.management
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.management.openmbean)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.management.openmbean
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.naming)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.naming
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.naming.directory)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.naming.directory
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.persistence)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.persistence
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.servlet
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.http)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.servlet.http
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.sql)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.sql
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.framework
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.resource
     </require>
   </resource>
   <resource id='patricia-trie/0.2.0' presentationname='patricia-trie' symbolicname='patricia-trie' uri='patricia-trie/patricia-trie-0.2.0.jar' version='0.2.0'>

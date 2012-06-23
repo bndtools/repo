@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www2.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20120703113227.864' name='Untitled'>
+<repository lastmodified='20120703113500.451' name='Untitled'>
   <resource id='aQute.libg/2.7.3' presentationname='aQute.libg' symbolicname='aQute.libg' uri='aQute.libg/aQute.libg-2.7.3.jar' version='2.7.3'>
     <description>
       A library to be statically linked. Contains many small utilities.
@@ -6434,6 +6434,46 @@
     <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
       Import package org.osgi.resource
     </require>
+  </resource>
+  <resource id='osgi.r5/1.0.0' presentationname='OSGi R5 Filtered Build Library' symbolicname='osgi.r5' uri='osgi.r5/osgi.r5-1.0.0.jar' version='1.0.0'>
+    <description>
+      Exports a limited set of packages from OSGi R5 core and enterprise.
+    </description>
+    <size>
+      48938
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="Apache
+       2.0 Licensed"; link=LICENSE
+    </license>
+    <copyright>
+      Copyright (c) aQute (2000, 2012). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='OSGi R5 Filtered Build Library'/>
+      <p n='symbolicname' v='osgi.r5'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.namespace'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.repository'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.resolver'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
   </resource>
   <resource id='patricia-trie/0.2.0' presentationname='patricia-trie' symbolicname='patricia-trie' uri='patricia-trie/patricia-trie-0.2.0.jar' version='0.2.0'>
     <size>

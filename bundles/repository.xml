@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www2.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20120708055310.471' name='Untitled'>
+<repository lastmodified='20120717021343.549' name='Untitled'>
   <resource id='aQute.libg/2.7.3' presentationname='aQute.libg' symbolicname='aQute.libg' uri='aQute.libg/aQute.libg-2.7.3.jar' version='2.7.3'>
     <description>
       A library to be statically linked. Contains many small utilities.
@@ -9,7 +9,7 @@
        compile only.
     </description>
     <size>
-      413097
+      354970
     </size>
     <license>
       http://www.opensource.org/licenses/apache2.0.php; description="Apache
@@ -38,7 +38,6 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.lib.converter'/>
-      <p n='uses' v='aQute.lib.base64'/>
       <p n='version' t='version' v='2.0.1'/>
     </capability>
     <capability name='package'>
@@ -51,7 +50,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.lib.getopt'/>
-      <p n='uses' v='aQute.libg.generics,aQute.configurable,aQute.libg.reporter,aQute.service.reporter,aQute.lib.justif'/>
+      <p n='uses' v='aQute.service.reporter'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
@@ -68,7 +67,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.lib.json'/>
-      <p n='uses' v='aQute.lib.base64,aQute.lib.converter'/>
+      <p n='uses' v='aQute.lib.converter'/>
       <p n='version' t='version' v='2.4.0'/>
     </capability>
     <capability name='package'>
@@ -76,13 +75,7 @@
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
-      <p n='package' v='aQute.lib.properties'/>
-      <p n='uses' v='aQute.lib.io'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
       <p n='package' v='aQute.lib.putjar'/>
-      <p n='uses' v='aQute.libg.fileiterator'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
@@ -95,7 +88,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.libg.cafs'/>
-      <p n='uses' v='aQute.libg.cryptography,aQute.lib.index,aQute.lib.io'/>
+      <p n='uses' v='aQute.libg.cryptography'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
@@ -108,17 +101,17 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.libg.clauses'/>
-      <p n='uses' v='aQute.libg.qtokens,aQute.libg.log'/>
+      <p n='uses' v='aQute.libg.log'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.libg.command'/>
-      <p n='uses' v='aQute.lib.io,aQute.service.reporter'/>
+      <p n='uses' v='aQute.service.reporter'/>
       <p n='version' t='version' v='3.0.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.libg.cryptography'/>
-      <p n='uses' v='aQute.libg.tuple,aQute.lib.io,aQute.lib.hex'/>
+      <p n='uses' v='aQute.libg.tuple'/>
       <p n='version' t='version' v='1.1.0'/>
     </capability>
     <capability name='package'>
@@ -127,11 +120,6 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.libg.filelock'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.libg.filerepo'/>
-      <p n='uses' v='aQute.libg.version'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
@@ -155,11 +143,6 @@
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
-      <p n='package' v='aQute.libg.header'/>
-      <p n='uses' v='aQute.libg.generics,aQute.libg.version,aQute.libg.qtokens,aQute.service.reporter,aQute.lib.collections'/>
-      <p n='version' t='version' v='1.1.0'/>
-    </capability>
-    <capability name='package'>
       <p n='package' v='aQute.libg.log'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
@@ -169,17 +152,16 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.libg.qtokens'/>
-      <p n='uses' v='aQute.libg.generics'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.libg.reporter'/>
-      <p n='uses' v='aQute.libg.generics,aQute.service.reporter'/>
+      <p n='uses' v='aQute.service.reporter'/>
       <p n='version' t='version' v='1.3.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.libg.sax'/>
-      <p n='uses' v='javax.xml.transform,javax.xml.parsers,org.xml.sax,javax.xml.transform.sax'/>
+      <p n='uses' v='javax.xml.transform,org.xml.sax'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
@@ -189,7 +171,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.libg.sed'/>
-      <p n='uses' v='aQute.lib.io,aQute.libg.glob,aQute.libg.reporter,aQute.service.reporter,aQute.lib.collections'/>
+      <p n='uses' v='aQute.libg.reporter,aQute.service.reporter'/>
       <p n='version' t='version' v='1.0.1'/>
     </capability>
     <capability name='package'>
@@ -201,12 +183,8 @@
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
-      <p n='package' v='aQute.libg.version'/>
-      <p n='version' t='version' v='1.0.1'/>
-    </capability>
-    <capability name='package'>
       <p n='package' v='aQute.libg.xslt'/>
-      <p n='uses' v='javax.xml.transform,javax.xml.transform.stream'/>
+      <p n='uses' v='javax.xml.transform'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <capability name='package'>
@@ -1149,106 +1127,6 @@
       Execution Environment (|(ee=J2SE-1.5))
     </require>
   </resource>
-  <resource id='biz.aQute.bnd/1.52.3.20120708-144439' presentationname='biz.aQute.bnd' symbolicname='biz.aQute.bnd' uri='biz.aQute.bnd/biz.aQute.bnd-1.52.3.jar' version='1.52.3.20120708-144439'>
-    <size>
-      1710171
-    </size>
-    <license>
-      http://www.opensource.org/licenses/apache2.0.php; description="Apache
-       2.0 Licensed"; link=LICENSE
-    </license>
-    <copyright>
-      Copyright (c) aQute (2000, 2012). All Rights Reserved.
-    </copyright>
-    <capability name='bundle'>
-      <p n='manifestversion' v='2'/>
-      <p n='presentationname' v='biz.aQute.bnd'/>
-      <p n='symbolicname' v='biz.aQute.bnd'/>
-      <p n='version' t='version' v='1.52.3.20120708-144439'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.service'/>
-      <p n='uses' v='aQute.service.reporter'/>
-      <p n='version' t='version' v='2.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.service.action'/>
-      <p n='version' t='version' v='1.43.1'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.service.diff'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.service.url'/>
-      <p n='version' t='version' v='1.1.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='org.osgi.service.bindex'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.service.reporter'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.osgi.resource'/>
-      <p n='uses' v='org.osgi.resource'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='org.osgi.resource'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <require extend='false' filter='(&amp;(package=org.apache.tools.ant)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
-      Import package org.apache.tools.ant
-    </require>
-    <require extend='false' filter='(&amp;(package=org.apache.tools.ant.taskdefs)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
-      Import package org.apache.tools.ant.taskdefs
-    </require>
-    <require extend='false' filter='(&amp;(package=org.apache.tools.ant.types)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
-      Import package org.apache.tools.ant.types
-    </require>
-    <require extend='false' filter='(&amp;(package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='true'>
-      Import package junit.framework ;version=[3.8.0,4.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.service.reporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.service.reporter ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.naming)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.naming
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.namespace
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.parsers
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.transform
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.transform.dom
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.transform.stream
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.xpath
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.resource ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.w3c.dom
-    </require>
-    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.xml.sax
-    </require>
-  </resource>
   <resource id='biz.aQute.bnd/1.50.1' presentationname='bnd' symbolicname='biz.aQute.bnd' uri='biz.aQute.bnd/biz.aQute.bnd-1.50.1.jar' version='1.50.1'>
     <description>
       A utility and plugin to wrap, build, print, or otherwise manipulate
@@ -1405,6 +1283,137 @@
     </require>
     <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
       Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id='biz.aQute.bnd/1.52.3.20120717-094353' presentationname='biz.aQute.bnd' symbolicname='biz.aQute.bnd' uri='biz.aQute.bnd/biz.aQute.bnd-1.52.3.jar' version='1.52.3.20120717-094353'>
+    <size>
+      1723145
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="Apache
+       2.0 Licensed"; link=LICENSE
+    </license>
+    <copyright>
+      Copyright (c) aQute (2000, 2012). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='biz.aQute.bnd'/>
+      <p n='symbolicname' v='biz.aQute.bnd'/>
+      <p n='version' t='version' v='1.52.3.20120717-094353'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.service'/>
+      <p n='uses' v='aQute.bnd.build,aQute.bnd.osgi,aQute.service.reporter'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.service.action'/>
+      <p n='uses' v='aQute.bnd.build'/>
+      <p n='version' t='version' v='1.43.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.service.diff'/>
+      <p n='uses' v='aQute.bnd.osgi'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.service.url'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.header'/>
+      <p n='uses' v='aQute.service.reporter'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.osgi'/>
+      <p n='uses' v='aQute.bnd.header,aQute.bnd.service,aQute.service.reporter'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.build'/>
+      <p n='uses' v='aQute.bnd.maven.support,aQute.bnd.osgi,aQute.bnd.service,aQute.bnd.service.action,aQute.service.reporter'/>
+      <p n='version' t='version' v='1.45.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.maven.support'/>
+      <p n='uses' v='aQute.bnd.osgi,aQute.bnd.service,org.w3c.dom,aQute.service.reporter,javax.xml.xpath'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.bindex'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.service.reporter'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.osgi.resource'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.apache.tools.ant)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package org.apache.tools.ant
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.tools.ant.taskdefs)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package org.apache.tools.ant.taskdefs
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.tools.ant.types)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package org.apache.tools.ant.types
+    </require>
+    <require extend='false' filter='(&amp;(package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='true'>
+      Import package junit.framework ;version=[3.8.0,4.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.service)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.service ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.service.action)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.service.action ;version=[1.43.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.service.diff)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.service.diff ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.service.reporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.service.reporter ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.naming)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.naming
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.namespace
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.xpath
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.resource ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
     </require>
   </resource>
   <resource id='biz.aQute.bnd/1.51.1' presentationname='bnd' symbolicname='biz.aQute.bnd' uri='biz.aQute.bnd/biz.aQute.bnd-1.51.1.jar' version='1.51.1'>
@@ -1565,6 +1574,42 @@
       Execution Environment (|(ee=J2SE-1.5))
     </require>
   </resource>
+  <resource id='biz.aQute.bnd.annotation/1.52.3.20120717-094352' presentationname='bnd Annotations Library' symbolicname='biz.aQute.bnd.annotation' uri='biz.aQute.bnd.annotation/biz.aQute.bnd.annotation-1.52.3.jar' version='1.52.3.20120717-094352'>
+    <description>
+      Contains only the annotations for bnd.
+    </description>
+    <size>
+      26899
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="Apache
+       2.0 Licensed"; link=LICENSE
+    </license>
+    <documentation>
+      http://www.aQute.biz/Code/Bnd
+    </documentation>
+    <copyright>
+      Copyright (c) aQute (2000, 2012). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='bnd Annotations Library'/>
+      <p n='symbolicname' v='biz.aQute.bnd.annotation'/>
+      <p n='version' t='version' v='1.52.3.20120717-094352'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.annotation'/>
+      <p n='version' t='version' v='1.43.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.annotation.component'/>
+      <p n='version' t='version' v='1.43.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.annotation.metatype'/>
+      <p n='version' t='version' v='1.43.1'/>
+    </capability>
+  </resource>
   <resource id='biz.aQute.bnd.annotation/1.50.1' presentationname='bnd Annotations Library' symbolicname='biz.aQute.bnd.annotation' uri='biz.aQute.bnd.annotation/biz.aQute.bnd.annotation-1.50.1.jar' version='1.50.1'>
     <description>
       Contains only the annotations for bnd.
@@ -1627,42 +1672,6 @@
     <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.w3c.dom
     </require>
-  </resource>
-  <resource id='biz.aQute.bnd.annotation/1.52.3.20120708-085721' presentationname='bnd Annotations Library' symbolicname='biz.aQute.bnd.annotation' uri='biz.aQute.bnd.annotation/biz.aQute.bnd.annotation-1.52.3.jar' version='1.52.3.20120708-085721'>
-    <description>
-      Contains only the annotations for bnd.
-    </description>
-    <size>
-      26904
-    </size>
-    <license>
-      http://www.opensource.org/licenses/apache2.0.php; description="Apache
-       2.0 Licensed"; link=LICENSE
-    </license>
-    <documentation>
-      http://www.aQute.biz/Code/Bnd
-    </documentation>
-    <copyright>
-      Copyright (c) aQute (2000, 2012). All Rights Reserved.
-    </copyright>
-    <capability name='bundle'>
-      <p n='manifestversion' v='2'/>
-      <p n='presentationname' v='bnd Annotations Library'/>
-      <p n='symbolicname' v='biz.aQute.bnd.annotation'/>
-      <p n='version' t='version' v='1.52.3.20120708-085721'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.annotation'/>
-      <p n='version' t='version' v='1.43.1'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.annotation.component'/>
-      <p n='version' t='version' v='1.43.1'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.annotation.metatype'/>
-      <p n='version' t='version' v='1.43.1'/>
-    </capability>
   </resource>
   <resource id='biz.aQute.bnd.annotation/1.47.0' presentationname='bnd Annotations Library' symbolicname='biz.aQute.bnd.annotation' uri='biz.aQute.bnd.annotation/biz.aQute.bnd.annotation-1.47.0.jar' version='1.47.0'>
     <description>
@@ -1916,12 +1925,12 @@
       Import package org.w3c.dom
     </require>
   </resource>
-  <resource id='biz.aQute.bnd.test/1.52.3.20120708-144439' presentationname='bnd Test Library' symbolicname='biz.aQute.bnd.test' uri='biz.aQute.bnd.test/biz.aQute.bnd.test-1.52.3.jar' version='1.52.3.20120708-144439'>
+  <resource id='biz.aQute.bnd.test/1.52.3.20120717-094353' presentationname='bnd Test Library' symbolicname='biz.aQute.bnd.test' uri='biz.aQute.bnd.test/biz.aQute.bnd.test-1.52.3.jar' version='1.52.3.20120717-094353'>
     <description>
       Contains only the test functions for bnd.
     </description>
     <size>
-      7687
+      7668
     </size>
     <license>
       http://www.opensource.org/licenses/apache2.0.php; description="Apache
@@ -1937,12 +1946,12 @@
       <p n='manifestversion' v='2'/>
       <p n='presentationname' v='bnd Test Library'/>
       <p n='symbolicname' v='biz.aQute.bnd.test'/>
-      <p n='version' t='version' v='1.52.3.20120708-144439'/>
+      <p n='version' t='version' v='1.52.3.20120717-094353'/>
     </capability>
     <capability name='package'>
       <p n='package' v='aQute.bnd.test'/>
-      <p n='uses' v='javax.xml.parsers,org.w3c.dom,javax.xml.namespace,junit.framework,javax.xml.xpath,aQute.service.reporter'/>
-      <p n='version' t='version' v='1.52.3.20120708-144439'/>
+      <p n='uses' v='javax.xml.namespace,aQute.service.reporter,junit.framework'/>
+      <p n='version' t='version' v='1.52.3.20120717-094353'/>
     </capability>
     <require extend='false' filter='(&amp;(package=aQute.service.reporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package aQute.service.reporter ;version=[1.0.0,2.0.0)
@@ -1961,214 +1970,6 @@
     </require>
     <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.w3c.dom
-    </require>
-  </resource>
-  <resource id='biz.aQute.bndlib/2.0.0.20120708-085712' presentationname='bnd - Bundle Tool' symbolicname='biz.aQute.bndlib' uri='biz.aQute.bndlib/biz.aQute.bndlib-2.0.0.jar' version='2.0.0.20120708-085712'>
-    <description>
-      A Swiss Army Knife for OSGi
-    </description>
-    <size>
-      1245625
-    </size>
-    <license>
-      http://www.opensource.org/licenses/apache2.0.php; description="Apache
-       Software License 2.0"; link=http://www.apache.org/licenses/LICENSE-2.0.html
-    </license>
-    <documentation>
-      http://www.aQute.biz/Code/Bnd
-    </documentation>
-    <copyright>
-      Copyright Â© aQute SARL (2000, 2011). All Rights Reserved.
-    </copyright>
-    <capability name='bundle'>
-      <p n='manifestversion' v='2'/>
-      <p n='presentationname' v='bnd - Bundle Tool'/>
-      <p n='symbolicname' v='biz.aQute.bndlib'/>
-      <p n='version' t='version' v='2.0.0.20120708-085712'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.annotation'/>
-      <p n='version' t='version' v='1.43.1'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.annotation.component'/>
-      <p n='version' t='version' v='1.43.1'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.annotation.metatype'/>
-      <p n='version' t='version' v='1.43.1'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.osgi'/>
-      <p n='uses' v='aQute.libg.version,aQute.bnd.service,aQute.libg.sed,aQute.bnd.service.diff,aQute.bnd.annotation.metatype,aQute.libg.reporter,aQute.libg.header,aQute.libg.qtokens,aQute.service.reporter,aQute.bnd.annotation,aQute.lib.collections,aQute.bnd.differ'/>
-      <p n='version' t='version' v='2.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.osgi.resource'/>
-      <p n='uses' v='aQute.libg.version,org.osgi.resource'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='org.osgi.resource'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='org.osgi.service.repository'/>
-      <p n='uses' v='org.osgi.resource'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.build'/>
-      <p n='uses' v='aQute.bnd.service.action,aQute.libg.version,aQute.bnd.service,aQute.libg.sed,aQute.lib.osgi,aQute.libg.reporter,javax.naming,aQute.libg.header,aQute.service.reporter,aQute.bnd.help'/>
-      <p n='version' t='version' v='1.45.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.differ'/>
-      <p n='uses' v='aQute.libg.version,aQute.bnd.service,aQute.lib.osgi,aQute.bnd.service.diff,aQute.libg.header,aQute.service.reporter,aQute.bnd.annotation,aQute.lib.collections'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.service'/>
-      <p n='uses' v='aQute.libg.version,aQute.lib.osgi,aQute.bnd.build,aQute.service.reporter'/>
-      <p n='version' t='version' v='2.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.service.action'/>
-      <p n='uses' v='aQute.bnd.build'/>
-      <p n='version' t='version' v='1.43.1'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.service.diff'/>
-      <p n='uses' v='aQute.lib.osgi'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.service.url'/>
-      <p n='version' t='version' v='1.1.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.help'/>
-      <p n='uses' v='aQute.lib.osgi'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.collections'/>
-      <p n='version' t='version' v='1.1.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.properties'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.libg.reporter'/>
-      <p n='uses' v='aQute.service.reporter'/>
-      <p n='version' t='version' v='1.3.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.libg.version'/>
-      <p n='version' t='version' v='1.0.1'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.libg.sed'/>
-      <p n='uses' v='aQute.libg.reporter,aQute.service.reporter,aQute.lib.collections'/>
-      <p n='version' t='version' v='1.0.1'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.libg.header'/>
-      <p n='uses' v='aQute.libg.version,aQute.libg.qtokens,aQute.service.reporter,aQute.lib.collections'/>
-      <p n='version' t='version' v='1.1.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.libg.qtokens'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.libg.tuple'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.build.model'/>
-      <p n='uses' v='aQute.libg.version,aQute.bnd.build.model.conversions,aQute.lib.properties,aQute.bnd.build.model.clauses,aQute.libg.header,aQute.libg.tuple,org.osgi.resource'/>
-      <p n='version' t='version' v='2.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.build.model.clauses'/>
-      <p n='uses' v='aQute.libg.header'/>
-      <p n='version' t='version' v='2.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.bnd.build.model.conversions'/>
-      <p n='uses' v='aQute.lib.osgi,aQute.bnd.build.model.clauses,aQute.libg.header,aQute.libg.qtokens,aQute.bnd.build.model,aQute.libg.tuple,org.osgi.resource,aQute.lib.osgi.resource'/>
-      <p n='version' t='version' v='2.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.libg.sax'/>
-      <p n='uses' v='javax.xml.transform,org.xml.sax,javax.xml.transform.sax,javax.xml.parsers'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.service.reporter'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <require extend='false' filter='(&amp;(package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='true'>
-      Import package junit.framework ;version=[3.8.0,4.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.bnd.annotation.component)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.bnd.annotation.component ;version=[1.43.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.bnd.annotation.metatype)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.bnd.annotation.metatype ;version=[1.43.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.bnd.service)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.bnd.service ;version=[2.0.0,3.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.lib.collections)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.lib.collections ;version=[1.1.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.libg.tuple)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.libg.tuple ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.libg.version)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.libg.version ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.service.reporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.service.reporter ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.naming)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.naming
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.namespace
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.parsers
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.transform
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.transform.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.transform.sax
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.transform.stream
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.xpath
-    </require>
-    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.w3c.dom
-    </require>
-    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.xml.sax
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
-      Import package org.osgi.resource ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
-    </require>
-    <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
-      Execution Environment (|(ee=J2SE-1.5))
     </require>
   </resource>
   <resource id='biz.aQute.bndlib/1.52.1' presentationname='bnd - Bundle Tool' symbolicname='biz.aQute.bndlib' uri='biz.aQute.bndlib/biz.aQute.bndlib-1.52.1.jar' version='1.52.1'>
@@ -3797,6 +3598,179 @@
       Execution Environment (|(ee=J2SE-1.5))
     </require>
   </resource>
+  <resource id='biz.aQute.bndlib/2.0.0.20120717-094345' presentationname='bndlib' symbolicname='biz.aQute.bndlib' uri='biz.aQute.bndlib/biz.aQute.bndlib-2.0.0.jar' version='2.0.0.20120717-094345'>
+    <description>
+      A Swiss Army Knife for OSGi
+    </description>
+    <size>
+      1253707
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="Apache
+       Software License 2.0"; link=http://www.apache.org/licenses/LICENSE-2.0.html
+    </license>
+    <documentation>
+      http://www.aQute.biz/Code/Bnd
+    </documentation>
+    <copyright>
+      Copyright Â© aQute SARL (2000, 2011). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='bndlib'/>
+      <p n='symbolicname' v='biz.aQute.bndlib'/>
+      <p n='version' t='version' v='2.0.0.20120717-094345'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.annotation'/>
+      <p n='version' t='version' v='1.43.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.annotation.component'/>
+      <p n='version' t='version' v='1.43.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.annotation.metatype'/>
+      <p n='version' t='version' v='1.43.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.osgi'/>
+      <p n='uses' v='aQute.service.reporter,aQute.bnd.service,aQute.bnd.header'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.osgi.resource'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.build'/>
+      <p n='uses' v='aQute.service.reporter,aQute.bnd.maven.support,aQute.bnd.service,aQute.bnd.service.action,aQute.bnd.osgi'/>
+      <p n='version' t='version' v='1.45.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.differ'/>
+      <p n='uses' v='aQute.service.reporter,aQute.bnd.service,aQute.bnd.header,aQute.bnd.osgi,aQute.bnd.service.diff'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.service'/>
+      <p n='uses' v='aQute.service.reporter,aQute.bnd.build,aQute.bnd.osgi'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.service.action'/>
+      <p n='uses' v='aQute.bnd.build'/>
+      <p n='version' t='version' v='1.43.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.service.diff'/>
+      <p n='uses' v='aQute.bnd.osgi'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.service.url'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.help'/>
+      <p n='uses' v='aQute.bnd.osgi'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.repository'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.header'/>
+      <p n='uses' v='aQute.service.reporter'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.filerepo'/>
+      <p n='uses' v='aQute.bnd.osgi'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.properties'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.build.model'/>
+      <p n='uses' v='aQute.bnd.properties,org.osgi.resource,aQute.bnd.build.model.clauses'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.build.model.clauses'/>
+      <p n='uses' v='aQute.bnd.header'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.service.reporter'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.maven.support'/>
+      <p n='uses' v='aQute.service.reporter,aQute.bnd.service,org.w3c.dom,aQute.bnd.osgi,javax.xml.xpath'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='true'>
+      Import package junit.framework ;version=[3.8.0,4.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.resource ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.annotation.component)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.annotation.component ;version=[1.43.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.annotation.metatype)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.annotation.metatype ;version=[1.43.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.build.model.clauses)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.build.model.clauses ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.service)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.service ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.service.reporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.service.reporter ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.naming)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.naming
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.namespace
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.xpath
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
   <resource id='biz.aQute.bndlib/1.53.1' presentationname='bnd - Bundle Tool' symbolicname='biz.aQute.bndlib' uri='biz.aQute.bndlib/biz.aQute.bndlib-1.53.1.jar' version='1.53.1'>
     <description>
       A Swiss Army Knife for OSGi
@@ -3997,7 +3971,7 @@
   </resource>
   <resource id='biz.aQute.junit/1.1.0' presentationname='biz.aQute.junit' symbolicname='biz.aQute.junit' uri='biz.aQute.junit/biz.aQute.junit-1.1.0.jar' version='1.1.0'>
     <size>
-      308877
+      308765
     </size>
     <license>
       http://www.opensource.org/licenses/apache2.0.php; description="Apache
@@ -4014,47 +3988,46 @@
     </capability>
     <capability name='package'>
       <p n='package' v='junit.framework'/>
-      <p n='uses' v='org.junit.runner.notification,org.junit,org.junit.runner.manipulation,org.junit.runner'/>
+      <p n='uses' v='org.junit.runner.manipulation,org.junit.runner,org.junit.runner.notification'/>
       <p n='version' t='version' v='3.8.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit'/>
-      <p n='uses' v='org.junit.internal.matchers,org.junit.internal'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.experimental'/>
-      <p n='uses' v='org.junit.runners,org.junit.runners.model,org.junit.runner'/>
+      <p n='uses' v='org.junit.runners.model,org.junit.runner'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.experimental.categories'/>
-      <p n='uses' v='org.junit.runners,org.junit.runners.model,org.junit.runner.manipulation,org.junit.runner'/>
+      <p n='uses' v='org.junit.runners.model,org.junit.runner.manipulation,org.junit.runners,org.junit.runner'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.experimental.max'/>
-      <p n='uses' v='org.junit.runner.notification,org.junit.runners,org.junit.internal.requests,org.junit.runners.model,org.junit.internal.runners,org.junit.runner,junit.framework'/>
+      <p n='uses' v='org.junit.runner,org.junit.runner.notification'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.experimental.results'/>
-      <p n='uses' v='org.junit.runner.notification,org.junit.internal.matchers,org.junit.internal,org.junit.runner'/>
+      <p n='uses' v='org.junit.runner,org.junit.runner.notification'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.experimental.runners'/>
-      <p n='uses' v='org.junit.runners,org.junit.runners.model'/>
+      <p n='uses' v='org.junit.runners.model,org.junit.runners'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.experimental.theories'/>
-      <p n='uses' v='org.junit.runners,org.junit.internal,org.junit.runners.model,org.junit,org.junit.experimental.theories.internal'/>
+      <p n='uses' v='org.junit.internal,org.junit.runners.model,org.junit.experimental.theories.internal,org.junit.runners'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.experimental.theories.internal'/>
-      <p n='uses' v='org.junit.experimental.theories,org.junit.runners.model'/>
+      <p n='uses' v='org.junit.runners.model,org.junit.experimental.theories'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
@@ -4064,12 +4037,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.internal'/>
-      <p n='uses' v='org.junit.runner.notification,org.junit,org.junit.runner'/>
+      <p n='uses' v='org.junit.runner,org.junit.runner.notification'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.internal.builders'/>
-      <p n='uses' v='org.junit.runner.notification,org.junit.runners,org.junit.runners.model,org.junit,org.junit.internal.runners,org.junit.runner,junit.framework'/>
+      <p n='uses' v='org.junit.runners.model,org.junit.runner,org.junit.runner.notification'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
@@ -4078,27 +4051,27 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.internal.requests'/>
-      <p n='uses' v='org.junit.internal.builders,org.junit.internal.runners,org.junit.runner.manipulation,org.junit.runner'/>
+      <p n='uses' v='org.junit.runner.manipulation,org.junit.runner'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.internal.runners'/>
-      <p n='uses' v='org.junit.runner.notification,org.junit.internal,org.junit.runners.model,org.junit,org.junit.runner.manipulation,org.junit.runner,junit.framework'/>
+      <p n='uses' v='junit.framework,org.junit.runner.manipulation,org.junit.runner,org.junit.runner.notification'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.internal.runners.model'/>
-      <p n='uses' v='org.junit.runner.notification,org.junit.internal,org.junit.runners.model,org.junit.runner'/>
+      <p n='uses' v='org.junit.internal,org.junit.runners.model,org.junit.runner,org.junit.runner.notification'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.internal.runners.rules'/>
-      <p n='uses' v='org.junit.rules,org.junit.runners.model,org.junit'/>
+      <p n='uses' v='org.junit.runners.model'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.internal.runners.statements'/>
-      <p n='uses' v='org.junit.internal,org.junit.runners.model'/>
+      <p n='uses' v='org.junit.runners.model'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
@@ -4108,12 +4081,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.rules'/>
-      <p n='uses' v='org.junit.internal.matchers,org.junit.internal.runners.statements,org.junit.matchers,org.junit.internal,org.junit.runners.model,org.junit,org.junit.runner'/>
+      <p n='uses' v='org.junit.runners.model,org.junit.runner'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.runner'/>
-      <p n='uses' v='org.junit.runner.notification,org.junit.runners,org.junit.internal.builders,org.junit.internal.requests,org.junit.internal,org.junit.runners.model,org.junit.internal.runners,org.junit.runner.manipulation,junit.framework'/>
+      <p n='uses' v='org.junit.internal,junit.framework,org.junit.runners.model,org.junit.runner.manipulation,org.junit.runner.notification'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
@@ -4128,22 +4101,22 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.runners'/>
-      <p n='uses' v='org.junit.runner.notification,org.junit.rules,org.junit.internal.builders,org.junit.internal.runners.model,org.junit.internal.runners.statements,org.junit.internal,org.junit.runners.model,org.junit,org.junit.internal.runners,org.junit.runner.manipulation,org.junit.runner,org.junit.internal.runners.rules'/>
+      <p n='uses' v='org.junit.rules,org.junit.runners.model,org.junit.runner.manipulation,org.junit.runner,org.junit.runner.notification,org.junit.internal.runners'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.junit.runners.model'/>
-      <p n='uses' v='org.junit.internal.runners.model,org.junit,org.junit.internal.runners,org.junit.runner'/>
+      <p n='uses' v='org.junit.runner'/>
       <p n='version' t='version' v='4.10.0'/>
     </capability>
     <require extend='false' filter='(&amp;(package=aQute.bnd.build)(version&gt;=1.45.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
       Import package aQute.bnd.build ;version=[1.45.0,2.0.0)
     </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.osgi)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='true'>
+      Import package aQute.bnd.osgi ;version=[2.0.0,3.0.0)
+    </require>
     <require extend='false' filter='(&amp;(package=aQute.bnd.service)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='true'>
       Import package aQute.bnd.service ;version=[2.0.0,3.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.lib.osgi)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='true'>
-      Import package aQute.lib.osgi ;version=[2.0.0,3.0.0)
     </require>
     <require extend='false' filter='(&amp;(package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='false'>
       Import package junit.framework ;version=[3.8.0,4.0.0)
@@ -4253,7 +4226,7 @@
   </resource>
   <resource id='biz.aQute.launcher/1.0.3' presentationname='biz.aQute.launcher' symbolicname='biz.aQute.launcher' uri='biz.aQute.launcher/biz.aQute.launcher-1.0.3.jar' version='1.0.3'>
     <size>
-      57771
+      57770
     </size>
     <license>
       http://www.opensource.org/licenses/apache2.0.php; description="Apache
@@ -4271,8 +4244,8 @@
     <require extend='false' filter='(&amp;(package=aQute.bnd.build)(version&gt;=1.45.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package aQute.bnd.build ;version=[1.45.0,2.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=aQute.lib.osgi)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.lib.osgi ;version=[2.0.0,3.0.0)
+    <require extend='false' filter='(&amp;(package=aQute.bnd.osgi)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.osgi ;version=[2.0.0,3.0.0)
     </require>
     <require extend='false' filter='(&amp;(package=aQute.service.reporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package aQute.service.reporter ;version=[1.0.0,2.0.0)
@@ -4379,6 +4352,127 @@
       Import package aQute.bnd.build ;version=[1.44.0,2.0.0)
     </require>
   </resource>
+  <resource id='biz.aQute.repository/2.0.1.20120714-041658_f8e6736' presentationname='biz.aQute.repository' symbolicname='biz.aQute.repository' uri='biz.aQute.repository/biz.aQute.repository-2.0.1.jar' version='2.0.1.20120714-041658_f8e6736'>
+    <size>
+      593137
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="Apache
+       2.0 Licensed"; link=LICENSE
+    </license>
+    <copyright>
+      Copyright (c) aQute (2000, 2012). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='biz.aQute.repository'/>
+      <p n='symbolicname' v='biz.aQute.repository'/>
+      <p n='version' t='version' v='2.0.1.20120714-041658_f8e6736'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.http'/>
+      <p n='uses' v='aQute.service.reporter,aQute.bnd.service.url,aQute.bnd.service,javax.net.ssl'/>
+      <p n='version' t='version' v='2.0.1.20120714-041658_f8e6736'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.obr'/>
+      <p n='uses' v='aQute.bnd.deployer.repository'/>
+      <p n='version' t='version' v='2.0.1.20120714-041658_f8e6736'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.repository'/>
+      <p n='uses' v='org.osgi.framework,aQute.service.reporter,aQute.bnd.deployer.repository.api,aQute.bnd.service.url,aQute.bnd.service,org.osgi.service.bindex,aQute.bnd.deployer.http,aQute.bnd.osgi,org.osgi.service.repository,org.osgi.service.log,aQute.bnd.filerepo,org.osgi.resource,aQute.bnd.deployer.repository.providers,org.osgi.service.coordinator'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.repository.api'/>
+      <p n='uses' v='aQute.bnd.service,org.osgi.service.log,org.osgi.resource'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.repository.providers'/>
+      <p n='uses' v='org.osgi.framework,aQute.bnd.deployer.repository.api,aQute.bnd.service,javax.xml.stream,org.osgi.service.bindex,aQute.bnd.osgi.resource,org.osgi.service.log,org.osgi.resource,org.osgi.service.indexer,javax.xml.transform.stream,javax.xml.transform'/>
+      <p n='version' t='version' v='2.0.1.20120714-041658_f8e6736'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.indexer'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.bindex'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.coordinator'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.log'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.bindex)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.bindex ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.repository)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.repository ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.filerepo)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.filerepo ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.osgi)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.osgi ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.service)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.service ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.service.url)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.service.url ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.service.reporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.service.reporter ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.net.ssl)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.net.ssl
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.security.auth.x500)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.security.auth.x500
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.indexer)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.indexer ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.resource ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.osgi.resource ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=1.4.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.log ;version=[1.3.0,1.4.0)
+    </require>
+  </resource>
   <resource id='biz.aQute.repository/1.0.0.20120618-122614' presentationname='biz.aQute.repository' symbolicname='biz.aQute.repository' uri='biz.aQute.repository/biz.aQute.repository-1.0.0.jar' version='1.0.0.20120618-122614'>
     <size>
       392251
@@ -4483,6 +4577,127 @@
     </require>
     <require extend='false' filter='(&amp;(package=org.osgi.service.bindex)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.osgi.service.bindex ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id='biz.aQute.repository/2.0.2.20120717-094416_1588e00' presentationname='biz.aQute.repository' symbolicname='biz.aQute.repository' uri='biz.aQute.repository/biz.aQute.repository-2.0.2.jar' version='2.0.2.20120717-094416_1588e00'>
+    <size>
+      593092
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="Apache
+       2.0 Licensed"; link=LICENSE
+    </license>
+    <copyright>
+      Copyright (c) aQute (2000, 2012). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='biz.aQute.repository'/>
+      <p n='symbolicname' v='biz.aQute.repository'/>
+      <p n='version' t='version' v='2.0.2.20120717-094416_1588e00'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.http'/>
+      <p n='uses' v='aQute.service.reporter,aQute.bnd.service,aQute.bnd.service.url'/>
+      <p n='version' t='version' v='2.0.2.20120717-094416_1588e00'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.obr'/>
+      <p n='uses' v='aQute.bnd.deployer.repository'/>
+      <p n='version' t='version' v='2.0.2.20120717-094416_1588e00'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.repository'/>
+      <p n='uses' v='org.osgi.service.log,aQute.service.reporter,aQute.bnd.service,aQute.bnd.service.url,org.osgi.resource,org.osgi.service.repository,aQute.bnd.deployer.repository.api,org.osgi.framework,org.osgi.service.coordinator,aQute.bnd.osgi'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.repository.api'/>
+      <p n='uses' v='org.osgi.service.log,aQute.bnd.service,org.osgi.resource'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='aQute.bnd.deployer.repository.providers'/>
+      <p n='uses' v='org.osgi.service.log,aQute.bnd.service,aQute.bnd.deployer.repository.api,org.osgi.service.bindex'/>
+      <p n='version' t='version' v='2.0.2.20120717-094416_1588e00'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.indexer'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.bindex'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.coordinator'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.log'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.bindex)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.bindex ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.repository)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.repository ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.filerepo)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.filerepo ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.osgi)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.osgi ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.service)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.service ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.service.url)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.service.url ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.service.reporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.service.reporter ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.net.ssl)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.net.ssl
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.security.auth.x500)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.security.auth.x500
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.indexer)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.indexer ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.osgi.resource ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.resource ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=1.4.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.log ;version=[1.3.0,1.4.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
     </require>
   </resource>
   <resource id='biz.aQute.repository/2.0.0.20120703-144107' presentationname='biz.aQute.repository' symbolicname='biz.aQute.repository' uri='biz.aQute.repository/biz.aQute.repository-2.0.0.jar' version='2.0.0.20120703-144107'>
@@ -4594,121 +4809,9 @@
       Import package org.osgi.framework ;version=[1.5.0,2.0.0)
     </require>
   </resource>
-  <resource id='biz.aQute.repository/2.0.1.20120708-085746' presentationname='biz.aQute.repository' symbolicname='biz.aQute.repository' uri='biz.aQute.repository/biz.aQute.repository-2.0.1.jar' version='2.0.1.20120708-085746'>
+  <resource id='biz.aQute.resolve/0.0.1.20120717-094425_1588e00' presentationname='biz.aQute.resolve' symbolicname='biz.aQute.resolve' uri='biz.aQute.resolve/biz.aQute.resolve-0.0.1.jar' version='0.0.1.20120717-094425_1588e00'>
     <size>
-      590584
-    </size>
-    <license>
-      http://www.opensource.org/licenses/apache2.0.php; description="Apache
-       2.0 Licensed"; link=LICENSE
-    </license>
-    <copyright>
-      Copyright (c) aQute (2000, 2012). All Rights Reserved.
-    </copyright>
-    <capability name='bundle'>
-      <p n='manifestversion' v='2'/>
-      <p n='presentationname' v='biz.aQute.repository'/>
-      <p n='symbolicname' v='biz.aQute.repository'/>
-      <p n='version' t='version' v='2.0.1.20120708-085746'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.deployer.http'/>
-      <p n='uses' v='aQute.service.reporter,aQute.bnd.service.url,aQute.bnd.service,javax.net.ssl'/>
-      <p n='version' t='version' v='2.0.1.20120708-085746'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.deployer.obr'/>
-      <p n='uses' v='aQute.lib.deployer.repository'/>
-      <p n='version' t='version' v='2.0.1.20120708-085746'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.deployer.repository'/>
-      <p n='uses' v='org.osgi.service.coordinator,org.osgi.framework,aQute.lib.deployer.repository.providers,org.osgi.resource,aQute.service.reporter,aQute.bnd.service.url,aQute.lib.deployer.http,aQute.lib.osgi,aQute.bnd.service,org.osgi.service.bindex,org.osgi.service.repository,aQute.lib.deployer.repository.api,org.osgi.service.log,aQute.libg.version'/>
-      <p n='version' t='version' v='2.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.deployer.repository.api'/>
-      <p n='uses' v='org.osgi.resource,aQute.bnd.service,org.osgi.service.log'/>
-      <p n='version' t='version' v='2.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='aQute.lib.deployer.repository.providers'/>
-      <p n='uses' v='aQute.lib.osgi.resource,org.osgi.framework,org.osgi.resource,org.osgi.service.indexer,javax.xml.transform,javax.xml.transform.stream,aQute.bnd.service,javax.xml.stream,org.osgi.service.bindex,aQute.lib.deployer.repository.api,org.osgi.service.log'/>
-      <p n='version' t='version' v='2.0.1.20120708-085746'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='org.osgi.service.indexer'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='org.osgi.service.bindex'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='org.osgi.service.coordinator'/>
-      <p n='uses' v='org.osgi.framework'/>
-      <p n='version' t='version' v='1.0.0'/>
-    </capability>
-    <capability name='package'>
-      <p n='package' v='org.osgi.service.log'/>
-      <p n='uses' v='org.osgi.framework'/>
-      <p n='version' t='version' v='1.3.0'/>
-    </capability>
-    <require extend='false' filter='(&amp;(package=org.osgi.service.bindex)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.service.bindex ;version=[1.0.0,1.1.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.service.repository)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.service.repository ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.bnd.service)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.bnd.service ;version=[2.0.0,3.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.bnd.service.url)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.bnd.service.url ;version=[1.1.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.lib.osgi)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.lib.osgi ;version=[2.0.0,3.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.libg.version)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.libg.version ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.service.reporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.service.reporter ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.net.ssl)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.net.ssl
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.security.auth.x500)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.security.auth.x500
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.stream ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.transform
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.transform.stream
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.service.indexer)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.service.indexer ;version=[1.0.0,1.1.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=1.4.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.service.log ;version=[1.3.0,1.4.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.resource ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=aQute.lib.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package aQute.lib.osgi.resource ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
-    </require>
-  </resource>
-  <resource id='biz.aQute.resolve/0.0.0.20120708-144453' presentationname='biz.aQute.resolve' symbolicname='biz.aQute.resolve' uri='biz.aQute.resolve/biz.aQute.resolve-0.0.0.jar' version='0.0.0.20120708-144453'>
-    <size>
-      65921
+      42683
     </size>
     <license>
       http://www.opensource.org/licenses/apache2.0.php; description="Apache
@@ -4721,11 +4824,69 @@
       <p n='manifestversion' v='2'/>
       <p n='presentationname' v='biz.aQute.resolve'/>
       <p n='symbolicname' v='biz.aQute.resolve'/>
-      <p n='version' t='version' v='0.0.0.20120708-144453'/>
+      <p n='version' t='version' v='0.0.1.20120717-094425_1588e00'/>
     </capability>
     <capability name='package'>
       <p n='package' v='biz.aQute.resolve'/>
-      <p n='uses' v='org.osgi.service.repository,org.osgi.framework,org.osgi.resource,aQute.bnd.service,aQute.bnd.build.model,org.osgi.service.resolver'/>
+      <p n='uses' v='aQute.bnd.service,org.osgi.service.resolver,aQute.bnd.build.model,org.osgi.resource,org.osgi.service.log'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.log'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.build.model)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.build.model ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.deployer.repository)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.deployer.repository ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.header)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.header ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.osgi.resource ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.service)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.service ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.resource ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.repository)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.repository ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.resolver)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.resolver ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id='biz.aQute.resolve/0.0.0.20120711-115336' presentationname='biz.aQute.resolve' symbolicname='biz.aQute.resolve' uri='biz.aQute.resolve/biz.aQute.resolve-0.0.0.jar' version='0.0.0.20120711-115336'>
+    <size>
+      67882
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="Apache
+       2.0 Licensed"; link=LICENSE
+    </license>
+    <copyright>
+      Copyright (c) aQute (2000, 2012). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='biz.aQute.resolve'/>
+      <p n='symbolicname' v='biz.aQute.resolve'/>
+      <p n='version' t='version' v='0.0.0.20120711-115336'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='biz.aQute.resolve'/>
+      <p n='uses' v='org.osgi.resource,aQute.bnd.build.model,aQute.bnd.service,org.osgi.service.resolver'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>
     <require extend='false' filter='(&amp;(package=aQute.bnd.build.model)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
@@ -6641,6 +6802,61 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.osgi.service.resolver'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+  </resource>
+  <resource id='osgi.r5/1.0.1' presentationname='OSGi R5 Filtered Build Library' symbolicname='osgi.r5' uri='osgi.r5/osgi.r5-1.0.1.jar' version='1.0.1'>
+    <description>
+      Exports a limited set of packages from OSGi R5 core and enterprise.
+    </description>
+    <size>
+      59898
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="Apache
+       2.0 Licensed"; link=LICENSE
+    </license>
+    <copyright>
+      Copyright (c) aQute (2000, 2012). All Rights Reserved.
+    </copyright>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='OSGi R5 Filtered Build Library'/>
+      <p n='symbolicname' v='osgi.r5'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.namespace'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.repository'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.resolver'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.namespace.contract'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.namespace.extender'/>
+      <p n='uses' v='org.osgi.resource'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.namespace.service'/>
       <p n='uses' v='org.osgi.resource'/>
       <p n='version' t='version' v='1.0.0'/>
     </capability>

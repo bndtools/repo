@@ -1,0 +1,4 @@
+cd ./bundles
+java -jar ./org.osgi.impl.bundle.bindex/org.osgi.impl.bundle.bindex-2.2.0.jar *
+java -jar <some path>/org.osgi.impl.bundle.bindex2.cli.jar */*.jar
+
